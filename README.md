@@ -17,7 +17,7 @@ Via Composer:
 
 Publish configurations and migrations, then migrate the `comments` table:
 
-    php artisan vendor:publish
+    php artisan vendor:publish --provider="Actuallymab\LaravelComment\LaravelCommentServiceProvider"
     php artisan migrate
 
 Add the `CanComment` trait to your User model:
